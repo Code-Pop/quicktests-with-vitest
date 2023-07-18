@@ -19,7 +19,7 @@
 defineProps({
     status: {
         type: String,
-        default: "success"
+        default: null
     },
     message: {
         type: String,
@@ -55,14 +55,14 @@ defineProps({
     opacity: 1;
 }
 
-.notification--error {
-    background-color: #fdecec;
-}
-
 .notification__text {
     margin: 0;
     margin-left: 17px;
     margin-right: auto;
+}
+
+.notification--error {
+    background-color: #fdecec;
 }
 
 .notification--error .notification__text {
@@ -73,7 +73,7 @@ defineProps({
     background-color: #e1f9f2;
 }
 
-.notification--success>.notification__text {
+.notification--success .notification__text {
     color: #146354;
 }
 
