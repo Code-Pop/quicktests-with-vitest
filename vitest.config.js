@@ -8,7 +8,7 @@ export default mergeConfig(
   defineConfig({
     test: {
       coverage: {
-        provider: 'c8'
+        provider: 'v8'
       },
       globals: true,
       environment: 'jsdom',
